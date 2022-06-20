@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a class="logo-text" href="#">Explorer</a>
+            </div>
+            <button id="toggle-nav" class="toggle-nav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="site-nav">
+                <ul class="sitenav-list">
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">Home</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">About</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <nav id="hidden-nav" class="site-nav hidden-nav">
+                <ul class="sitenav-list">
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">Home</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">About</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a class="sitenav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="overlay" class="overlay hidden"></div>
+    </header>
+    
+
+    <main class="site-main">
+        <div class="container site-main-container">
+            <ul class="site-main-list">
+                <!-- site-main-items 1 -->
+                <li class="site-main-list-items">
+                    <img class="site-main-list-items-img" src="./images/andre-francois-mckenzie-iGYiBhdNTpE-unsplash.jpg" alt="" width="850px" height="600px">
+                    <div class="site-main-list-items-img-p">
+                        <p class="site-main-list-items-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum aliquid ut rem aspernatur nesciunt dolor facilis debitis dolore non? Quisquam harum sint, neque cum voluptatem aut magni corporis, itaque natus molestias quam praesentium dicta. Facilis quos qui similique! Nobis rem animi eius, quaerat aliquid perspiciatis ex repellat nemo velit! Repellat id, inventore enim similique deleniti suscipit fugiat ea laboriosam! Facilis optio quia consectetur est blanditiis placeat voluptate! Voluptates, eligendi.
+                        </p>
+                    </div>
+                </li>
+                <!-- site-main-items 3 -->
+                <li class="site-main-list-items">
+                    <img class="site-main-list-items-img" src="./images/lorenzo-hamers-Sr8W5aaWSDU-unsplash.jpg" alt=""  width="850px" height="600px">
+                    <div class="site-main-list-items-img-p">
+                        <p class="site-main-list-items-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum aliquid ut rem aspernatur nesciunt dolor facilis debitis dolore non? Quisquam harum sint, neque cum voluptatem aut magni corporis, itaque natus molestias quam praesentium dicta. Facilis quos qui similique! Nobis rem animi eius, quaerat aliquid perspiciatis ex repellat nemo velit! Repellat id, inventore enim similique deleniti suscipit fugiat ea laboriosam! Facilis optio quia consectetur est blanditiis placeat voluptate! Voluptates, eligendi.
+                        </p>
+                    </div>
+                </li>
+                <!-- site-main-items 4 -->
+                <li class="site-main-list-items">
+                    <img class="site-main-list-items-img" src="./images/windows-lhDjusLtpP4-unsplash.jpg" alt="" width="850px" height="600px">
+                    <div class="site-main-list-items-img-p">
+                        <p class="site-main-list-items-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum aliquid ut rem aspernatur nesciunt dolor facilis debitis dolore non? Quisquam harum sint, neque cum voluptatem aut magni corporis, itaque natus molestias quam praesentium dicta. Facilis quos qui similique! Nobis rem animi eius, quaerat aliquid perspiciatis ex repellat nemo velit! Repellat id, inventore enim similique deleniti suscipit fugiat ea laboriosam! Facilis optio quia consectetur est blanditiis placeat voluptate! Voluptates, eligendi.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="site-main-button">
+                <button class="site-main-btn"  id="show-btn">
+                    <a class="site-mai-btn-link" href="#">Loren more</a>
+                </button>
+            </div>
+
+            
+            <div class="modal hidden" id="modal">
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                <h3>This is Explorer site information</h3>
+                <button class="btn close-btn" id="close-btn">
+                    <i class="fas fa-close"></i>
+                </button>
+                </div>
+            
+                <!-- MODAL BODY -->
+                <div class="modal-body">
+                <h2 class="modal-title">Explorer</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque modi ducimus velit provident labore placeat, itaque odit consequatur maiores quibusdam, accusamus, illo necessitatibus fugiat similique quos qui vero reprehenderit. Quia voluptatum natus recusandae fuga error laudantium sapiente. Accusamus a natus dicta iste, repellat odit provident quasi officiis? Quasi, velit. Commodi rerum excepturi quo architecto. Possimus pariatur voluptate temporibus ea. Nam quas eveniet esse corrupti libero ullam quibusdam iusto optio obcaecati qui, molestias nulla non reiciendis vitae aspernatur ducimus. Ut architecto non, temporibus esse facere reprehenderit voluptatibus impedit tempora reiciendis qui natus provident, nostrum eum molestiae culpa id necessitatibus quam fugiat!
+                </p>
+            </div>
+    </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay hidden" id="overlay"></div>
+            <!-- modal section -->
+
+        </div>
+    </main>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
